@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Gabriel Bauer">
+    <meta name="description" content="Programa em JavaScript que analiza os números">
+    <meta name="keywords" content="analize, JavaScript, contagem, números">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="icon.ico" type="image/x-icon">
+    <script src="js/functions.js" defer></script>
+    <title>Analisador de números</title>
+</head>
+
+<body>
+    <header>
+        <h1>Analisador de Números</h1>
+    </header>
+
+    <section>
+        <div class="inps">
+            <p>
+                <input type="number" class="number" id="number" placeholder="Número de 1 a 100">
+            </p>
+
+            <input type="submit" value="Adicionar" id="submit" onclick="adicionar()">
+
+            <input type="submit" value="Resetar" id="reset" onclick="resetar()">
+        </div>
+
+        <div id="ballArea"></div>
+
+        <input type="submit" value="Analisar" onclick="analisar()" style="margin-top: 20px;">
+
+        <div class="res" id="res">
+
+        </div>
+
+    </section>
+
+    <footer>
+        <a href="https://github.com/gabrielvbauer" target="blank">Gabriel Bauer, &copy; 2020</a>
+    </footer>
+</body>
+
+</html>
